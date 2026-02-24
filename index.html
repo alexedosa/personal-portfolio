@@ -7,14 +7,21 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/avif" href="imgs/code_logo.avif" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
 </head>
 <body>
+
     <!-- Nav Section -->
     <nav>
         <div class="logo">
             <img src="imgs/code_logo.avif" alt="Logo">
         </div>
+
+        <!-- Hamburger INSIDE nav -->
+        <button class="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
         <div class="links">
             <ul>
@@ -29,11 +36,9 @@
     <header>
         <div class="header">
             <div class="header-info">
-                <h1>Hi, I’m Daniel</h1>
-                <p>Full-Stack Developer.</p> 
-                <p>
-                    Python | Java | React | DRF | SQL
-                </p>
+                <h1>Hi, I'm Daniel</h1>
+                <p>Full-Stack Developer.</p>
+                <p>Python | Java | React | DRF | SQL</p>
             </div>
             <div class="mzn-img">
                 <img src="imgs/MyPicture.jpeg" alt="Daniel's profile picture">
@@ -55,86 +60,92 @@
     <!-- Projects -->
     <section id="projects">
         <h2>Projects</h2>
-    <div class="project-cards">
-        <ul class="cards">
+        <div class="project-cards">
+            <ul class="cards">
 
-            <li class="card">
-                <div>
-                    <h3 class="card-title">Personal Portfolio</h3>
-                    <div class="card-content">
-                        <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript.</p>
+                <li class="card">
+                    <div>
+                        <h3 class="card-title">Personal Portfolio</h3>
+                        <div class="card-content">
+                            <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card-link-wrapper">
-                    <a href="https://github.com/alexedosa/personal-portfolio" class="card-link">See Live Demo</a>
-                </div>
-            </li>
-            <li class="card">
-                <div>
-                    <h3 class="card-title">To do List App</h3>
-                    <div class="card-content">
-                        <p>A simple to-do list application built with HTML, CSS, and JavaScript.</p>
+                    <div class="card-link-wrapper">
+                        <a href="https://github.com/alexedosa/personal-portfolio" class="card-link">See Live Demo</a>
                     </div>
-                </div>
-                <div class="card-link-wrapper">
-                    <a href="https://to-do-web-app-nine-xi.vercel.app/" class="card-link">See Live Demo</a>
-                </div>
-            </li>
+                </li>
 
-            <li class="card">
-                <div>
-                    <h3 class="card-title">Python DRF Student Management System</h3>
-                    <div class="card-content">
-                        <p>A web application built with Django and DRF, showcasing RESTful API development.</p>
+                <li class="card">
+                    <div>
+                        <h3 class="card-title">To do List App</h3>
+                        <div class="card-content">
+                            <p>A simple to-do list application built with HTML, CSS, and JavaScript.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card-link-wrapper">
-                    <a href="https://github.com/alexedosa/student-management-crud-api/" class="card-link">Check Repository</a>
-                </div>
-            </li>
+                    <div class="card-link-wrapper">
+                        <a href="https://to-do-web-app-nine-xi.vercel.app/" class="card-link">See Live Demo</a>
+                    </div>
+                </li>
 
-            <li class="card">
-                <div>
-                    <h3 class="card-title">React Burger Website</h3>
-                    <div class="card-content">
-                        <p>A responsive burger restaurant website built with React JSX and CSS.</p>
+                <li class="card">
+                    <div>
+                        <h3 class="card-title">Python DRF Student Management System</h3>
+                        <div class="card-content">
+                            <p>A web application built with Django and DRF, showcasing RESTful API development.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card-link-wrapper">
-                    <a href="https://restaurants-website-rinc.vercel.app/" class="card-link">See Live Demo</a>
-                </div>
-            </li>
-            <li class="card">
-                <!-- Placeholder project — replace with real project later -->
-                <div>
-                    <h3 class="card-title">Student Manager</h3>
-                    <div class="card-content">
-                        <p>A simple Python CLI (Command Line Interface) application to manage student records.</p>
+                    <div class="card-link-wrapper">
+                        <a href="https://github.com/alexedosa/student-management-crud-api/" class="card-link">Check Repository</a>
                     </div>
-                </div>
-                <div class="card-link-wrapper">
-                    <a href="https://github.com/alexedosa/student-manager" class="card-link">See Live Demo</a>
-                </div>
-            </li>
-            <li class="card">
-                <div>
-                    <h3 class="card-title">Django Authentication Project</h3>
-                    <div class="card-content">
-                        <p>A project showcasing user authentication and authorization using Django and DRF.</p>
+                </li>
+
+                <li class="card">
+                    <div>
+                        <h3 class="card-title">React Burger Website</h3>
+                        <div class="card-content">
+                            <p>A responsive burger restaurant website built with React JSX and CSS.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card-link-wrapper">
-                    <a href="#" class="card-link">Coming Soon</a>
-                </div>
-            </li>
-        </ul>
-</div>
+                    <div class="card-link-wrapper">
+                        <a href="https://restaurants-website-rinc.vercel.app/" class="card-link">See Live Demo</a>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <div>
+                        <h3 class="card-title">Student Manager</h3>
+                        <div class="card-content">
+                            <p>A simple Python CLI application to manage student records.</p>
+                        </div>
+                    </div>
+                    <div class="card-link-wrapper">
+                        <a href="https://github.com/alexedosa/student-manager" class="card-link">Check Repository</a>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <div>
+                        <h3 class="card-title">Django Authentication Project</h3>
+                        <div class="card-content">
+                            <p>A project showcasing user authentication and authorization using Django and DRF.</p>
+                        </div>
+                    </div>
+                    <div class="card-link-wrapper">
+                        <a href="#" class="card-link">Coming Soon</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </section>
 
     <!-- Contact -->
     <section id="contact">
         <h2>Contact</h2>
         <div class="contact-body">
-            <div class="mail"><p><i class="fa-solid fa-paper-plane"></i> Email me at: <a href="mailto:alexedosadaniel@gmail.com">alexedosadaniel@gmail.com</a></p></div>
+            <div class="mail">
+                <p><i class="fa-solid fa-paper-plane"></i> Email me at: <a href="mailto:alexedosadaniel@gmail.com">alexedosadaniel@gmail.com</a></p>
+            </div>
             <div class="socials">
                 <a href="https://github.com/alexedosa"><i class="fa-brands fa-github"></i> GitHub</a>
                 <a href="https://www.linkedin.com/in/daniel-alex-edosa-91a50b349"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
@@ -145,5 +156,7 @@
     <footer>
         <p>© 2026</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
