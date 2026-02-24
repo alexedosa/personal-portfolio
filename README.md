@@ -30,7 +30,7 @@ Vercel (Deployment)
 
 TECHNICAL DECISIONS:
 
-I'll soon use a Mobile approach to ensure the site is lightweight on handheld devices. 
+I used a Mobile-First approach to ensure the site is lightweight on handheld devices. 
 
 I chose CSS Grid for the main layout to maintain a clean structure and Flexbox for component alignment.
 
