@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    --primary-color: #082748;
-  }
+  --primary-color: #082748;
+  --white: #ffffff;
+}
 * {
     margin: 0;
     padding: 0;
@@ -12,14 +13,14 @@
 
 body {
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-    line-height: 1.6;
+   line-height: 1.6;
     background: linear-gradient(to bottom, rgb(227, 227, 227), rgb(200, 198, 198));
     color: #333;
     padding: 20px;
 }
 
 nav{
-    background-color: #f4f4f43d;
+  background-color: rgba(244,244,244,0.24);
     padding: 10px 20px;
     backdrop-filter: blur(10px);
     display: flex;
@@ -48,7 +49,7 @@ nav ul {
 }
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--primary-color);
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -76,25 +77,44 @@ nav ul li a:hover {
     color: #555;
 }
 .mzn-img img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 260px;
+     height: 260px; 
+     border-radius: 50%;
+    object-fit: cover; 
+    border: 5px solid var(--white);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
-#skills{
-    margin-bottom: 40px;
+/* SKILLS */
+#skills i {
+    margin-right: 8px;
+    color: var(--primary-color);
 }
+#skills h2 { 
+  text-align: center;
+   margin-bottom: 5px;
+   }
 
-#skills h2{
-    text-align: center;
-}
-
-.langs{
+.skills-container {
     display: flex;
-    gap: 16px;
     justify-content: center;
-    margin: 8px 0;
-    margin-bottom: 40px;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+
+.skill-card {
+    background: var(--white);
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.skill-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
 }
 
 #projects h2{
@@ -115,7 +135,7 @@ nav ul li a:hover {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 
-  margin: 40px
+  margin: 40px;
 }
 
 .cards::-webkit-scrollbar {
@@ -252,13 +272,12 @@ nav ul li a:hover {
 
 /* Socials styling */
 .socials a {
-    margin: 0 15px;
-    color: var(--primary-color);
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.2s;
-    font-size: larger;
-    font-weight: 600;
+  margin: 0 15px;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: larger;
+  font-weight: 600;
 }
 
 .socials a:hover {
@@ -268,7 +287,6 @@ nav ul li a:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #f4f4f43d;
     backdrop-filter: blur(10px);
     margin-top: 40px;
     font-size: 0.9rem;

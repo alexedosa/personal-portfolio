@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/svg+xml" href="imgs/code_logo.png" />
+    <link rel="icon" type="image/avif" href="imgs/code_logo.avif" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 </head>
@@ -21,7 +21,6 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
             </ul>
         </div>
     </nav>
@@ -31,7 +30,7 @@
         <div class="header">
             <div class="header-info">
                 <h1>Hi, I’m Daniel</h1>
-                <p>Full-Stack Developer.</p>
+                <p>Full-Stack Developer.</p> 
                 <p>
                     Python | Java | React | DRF | SQL
                 </p>
@@ -45,12 +44,11 @@
     <!-- Skills -->
     <section id="skills">
         <h2>Skills</h2>
-        <div class="langs">
-            <!-- Example skill cards with icons -->
-            <div class="langs"><i class="fa-brands fa-python"></i> Python</div>
-            <div class="langs"><i class="fa-brands fa-java"></i> Java</div>
-            <div class="langs"><i class="fa-brands fa-react"></i> React</div>
-            <div class="langs"><i class="fa-solid fa-database"></i> SQL</div>
+        <div class="skills-container">
+            <div class="skill-card"><i class="fa-brands fa-python"></i> Python</div>
+            <div class="skill-card"><i class="fa-brands fa-java"></i> Java</div>
+            <div class="skill-card"><i class="fa-brands fa-react"></i> React</div>
+            <div class="skill-card"><i class="fa-solid fa-database"></i> SQL</div>
         </div>
     </section>
 
@@ -59,6 +57,18 @@
         <h2>Projects</h2>
     <div class="project-cards">
         <ul class="cards">
+
+            <li class="card">
+                <div>
+                    <h3 class="card-title">Personal Portfolio</h3>
+                    <div class="card-content">
+                        <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript.</p>
+                    </div>
+                </div>
+                <div class="card-link-wrapper">
+                    <a href="https://github.com/alexedosa/personal-portfolio" class="card-link">See Live Demo</a>
+                </div>
+            </li>
             <li class="card">
                 <div>
                     <h3 class="card-title">To do List App</h3>
@@ -95,28 +105,17 @@
                 </div>
             </li>
             <li class="card">
+                <!-- Placeholder project — replace with real project later -->
                 <div>
-                    <h3 class="card-title">React Burger Website</h3>
+                    <h3 class="card-title">Student Manager</h3>
                     <div class="card-content">
-                        <p>A responsive burger restaurant website built with React JSX and CSS.</p>
+                        <p>A simple Python CLI (Command Line Interface) application to manage student records.</p>
                     </div>
                 </div>
                 <div class="card-link-wrapper">
-                    <a href="#" class="card-link">See Live Demo</a>
+                    <a href="https://github.com/alexedosa/student-manager" class="card-link">See Live Demo</a>
                 </div>
             </li>
-            <li class="card">
-                <div>
-                    <h3 class="card-title">React Burger Website</h3>
-                    <div class="card-content">
-                        <p>A responsive burger restaurant website built with React JSX and CSS.</p>
-                    </div>
-                </div>
-                <div class="card-link-wrapper">
-                    <a href="#" class="card-link">See Live Demo</a>
-                </div>
-            </li>
-
             <li class="card">
                 <div>
                     <h3 class="card-title">Django Authentication Project</h3>
@@ -130,27 +129,21 @@
             </li>
         </ul>
 </div>
-<!-- 
-        </div>
-    </section> -->
 
     <!-- Contact -->
     <section id="contact">
         <h2>Contact</h2>
         <div class="contact-body">
             <div class="mail"><p><i class="fa-solid fa-paper-plane"></i> Email me at: <a href="mailto:alexedosadaniel@gmail.com">alexedosadaniel@gmail.com</a></p></div>
-            <!-- Added social links for a better look -->
             <div class="socials">
-                <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/alexedosa"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/daniel-alex-edosa-91a50b349"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 мυzαη</p>
+        <p>© 2026</p>
     </footer>
-
-    <script src="js/script.js"></script>
 </body>
 </html>
